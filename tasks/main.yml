@@ -1,0 +1,39 @@
+---
+
+- include_vars: base.yml
+
+  ## Description
+  #
+- name: CoreOS | custom certificates
+  include: certificates.yml
+  when: certificates['configure'] | default(false) | bool | lower
+
+  ## Description
+  #
+- name: CoreOS | etcd cluster settings
+  include: etcd.yml
+  when: coreos_etcd['configure'] | default(false) | bool | lower
+
+  ## Description
+  #
+- name: CoreOS | selinux settings
+  include: selinux.yml
+  when: coreos_selinux['configure'] | default(false) | bool | lower
+
+  ## Description
+  #
+- name: CoreOS | update and reboot settings
+  include: update.yml
+  when: coreos_update['configure'] | default(false) | bool | lower
+
+  ## Description
+  #
+- name: CoreOS | time and date settings
+  include: timedate.yml
+  when: coreos_timedate['configure'] | default(false) | bool | lower
+
+  ## Description
+  #
+- name: CoreOS | useraccounts
+  include: users.yml
+  when: coreos_users['configure'] | default(false) | bool | lower

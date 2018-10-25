@@ -1,0 +1,10 @@
+---
+
+base_paths:
+  downloads: '/tmp'
+  packages: '/opt'
+  binaries: '/opt/bin'
+  configs: '/etc'
+  systemd: '/etc/systemd/system'
+  data: '/var/lib'
+  logs: '/var/log'

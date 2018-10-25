@@ -1,0 +1,20 @@
+# CoreOS requires python (use role 'ansible-activepython' or similar)
+---
+
+coreos_certificates:
+  configure: false
+
+coreos_etcd:
+  configure: false
+
+coreos_selinux:
+  configure: false
+
+coreos_timedate:
+  configure: false
+
+coreos_updates:
+  configure: false
+
+coreos_users:
+  configure: false

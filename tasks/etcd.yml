@@ -1,0 +1,7 @@
+# https://coreos.com/os/docs/latest/cluster-discovery.html
+---
+
+- include_vars: etcd.yml
+
+- debug:
+    msg: "todo"

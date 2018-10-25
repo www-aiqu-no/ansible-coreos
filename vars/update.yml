@@ -1,0 +1,6 @@
+---
+
+reboot_strategies:
+  - etcd-lock
+  - reboot
+  - off

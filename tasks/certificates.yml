@@ -1,0 +1,6 @@
+---
+
+- include_vars: certificates.yml
+
+- debug:
+    msg: "todo"
